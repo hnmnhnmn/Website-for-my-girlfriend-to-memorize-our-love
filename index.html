@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Và cứ thế mỗi ngày thêm một tý. Ta yêu nhau cho mãi tới muôn đời.</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Nhấn vào đây em nhé!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Chúng mình đã bên nhau</h2>
+			<div id="timer">
+				<b id="d"></b> Ngày 
+				<b id="h"></b> Giờ 
+				<b id="m"></b> Phút
+				<b id="s"></b> Giây
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.jpg", "pic/pic2.jpg", "pic/pic3.jpg", "pic/pic4.jpg", "pic/pic5.jpg", "pic/pic6.jpg", 
+			"pic/pic7.jpg", "pic/pic8.jpg", "pic/pic9.jpg", "pic/pic10.jpg", "pic/pic11.jpg", "pic/pic12.jpg", "pic/pic13.jpg",
+			"pic/pic14.jpg", "pic/pic15.jpg", "pic/pic16.jpg", "pic/pic17.jpg", "pic/pic18.jpg", "pic/pic19.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["Đây là những lần nắm tay đầu tiên của mình nè!⸜(｡˃ ᵕ ˂ )⸝♡",
+			 "Mình chụp chung với nhau nè. Đóng khung lun nè!(˶ᵔ ᵕ ᵔ˶)",
+			  "Đây là lần đầu anh hôn lén em nè!~(｡･ω･｡)ﾉ♡",
+			 "Em bé xinh tươi chụp chung với em mèo nè!𓃠",
+			  "Mình đi ăn sushi ở quán chị bé quán quen nè!🍣", 
+			  "Giáng sinh đầu tiên mình bên nhau nè!~o(≧v≦)o", 
+			  "Anh yêu đón tết cùng em iuu nè!(/ω＼)",
+			 "Em hun anh nè ồ la laaaa  (˶ ˘ ³˘)ˆᵕ ˆ˶)", 
+			 "Em mặc áo xinh chưa nè!(･∀･)", 
+			 "Anh và em picnic nè. Lúc này nắng anh che cho em ngủ nè! ᕙ(  •̀ ᗜ •́  )ᕗ", 
+			 "Mình ngồi cf chơi nè. Anh có ngồi hát em nghe nè! ₊˚.🎧 ✩｡☕ 🤎", 
+			 "Song ca cùng thần tượng nè!  ♬ ♪ ٩(ˊᗜˋ*)و", 
+			 "Tranh thủ selfie nè! Em xinh lắm!📸", 
+			 "Em bé cùng anh iuu đến thăm trường anh nè! 🌷✨🏫🌟💗", 
+			 "Cô nữ sinh nào mà xinh chưa nè 💗💗💗", 
+			 "Aaaaaaaa ( ˶ˆᗜˆ˵ )", 
+			 "Ôm em iuu của anh (๑ᵕ◡ᵕ)(ˆ◡ˆc)", 
+			 "Ngắm biểu diễn phun nước nèee. Đẹp chưa nè!!🫧⋆｡˚🫧⋆｡˚", 
+			 "Bức ảnh đẹp nhất gửi người anh thương nhất. Anh yêu em nhiều, em bé của anh! 🥰"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
